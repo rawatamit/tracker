@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -36,9 +37,20 @@ namespace TagAlong
         {
         }
 
+        // TODO: fix this method
+        private async void messageBox(string msg)
+        {
+            var msgDlg = new Windows.UI.Popups.MessageDialog(msg);
+            msgDlg.DefaultCommandIndex = 1;
+            await msgDlg.ShowAsync();
+        }
+
         private void Click_GetCurrLoc(object sender, RoutedEventArgs e)
         {
-
+            Location location = new CurrentLocation();
+            string latitude = location.GetLatitude();
+            string longitude = location.GetLongitude();
+            messageBox(latitude + " " + longitude);
         }
 
         private void Click_GetUsingMaps(object sender, RoutedEventArgs e)

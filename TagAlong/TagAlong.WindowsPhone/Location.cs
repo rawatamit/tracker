@@ -10,6 +10,17 @@ namespace TagAlong
 {
     public class Location
     {
+        protected string _latitude = null;
+        protected string _longitude = null;
+        public string GetLatitude()
+        {
+            return _latitude;
+        }
+
+        public string GetLongitude()
+        {
+            return _latitude;
+        }
     }
 
     // this class provides functionality
@@ -19,8 +30,6 @@ namespace TagAlong
         private Geolocator _geolocator = null;
         private CancellationTokenSource _cts = null;
         private bool _satelliteInfo = false;
-        private string _latitude = null;
-        private string _longitude = null;
         public CurrentLocation()
         {
             _geolocator = new Geolocator();
@@ -29,16 +38,6 @@ namespace TagAlong
         public bool GetSatelliteInfo()
         {
             return _satelliteInfo;
-        }
-
-        public string GetLatitude()
-        {
-            return _latitude;
-        }
-
-        public string GetLongitude()
-        {
-            return _latitude;
         }
 
         async public void GetGeolocation(object sender, Windows.UI.Xaml.RoutedEventArgs e)
