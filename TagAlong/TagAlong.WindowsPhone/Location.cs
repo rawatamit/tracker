@@ -50,11 +50,11 @@ namespace TagAlong
                 Geoposition position = await _geolocator.GetGeopositionAsync().AsTask(token);
                 _latitude = position.Coordinate.Point.Position.Latitude.ToString();
                 _longitude = position.Coordinate.Point.Position.Longitude.ToString();
-                
+
                 // check if the satellite is enabled
                 if (position.Coordinate.PositionSource == PositionSource.Satellite)
                 {
-                   _satelliteInfo = true;
+                    _satelliteInfo = true;
                 }
                 else
                 {
