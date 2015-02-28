@@ -20,11 +20,16 @@ namespace TagAlong
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage2 : Page
+    public sealed partial class Create_Final : Page
     {
-        public BlankPage2()
+        public Create_Final()
         {
             this.InitializeComponent();
+        }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
