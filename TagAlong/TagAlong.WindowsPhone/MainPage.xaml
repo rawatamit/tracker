@@ -9,6 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock HorizontalAlignment="Center" FontSize="25" Margin="143,83,146,0" TextWrapping="Wrap" Text="Tag Along" VerticalAlignment="Top"/>
+        <Button Content="Create a destination tag" HorizontalAlignment="Left" Margin="92,218,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Join a destination" HorizontalAlignment="Left" Margin="116,348,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
