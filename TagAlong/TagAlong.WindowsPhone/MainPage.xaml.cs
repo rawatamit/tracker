@@ -45,10 +45,9 @@ namespace TagAlong
             // this event is handled for you.
         }
 
-        private void Button_Click_Create_Tag(object sender, RoutedEventArgs e)
+        private void Button_Click_CreateTag(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Create_Pick_Source));
+            this.Frame.Navigate(typeof(Create_PickSource));
         }
-
     }
 }

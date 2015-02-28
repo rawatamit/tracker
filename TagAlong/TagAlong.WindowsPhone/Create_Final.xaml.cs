@@ -12,7 +12,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -21,9 +20,9 @@ namespace TagAlong
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Create_Final : Page
+    public sealed partial class BlankPage2 : Page
     {
-        public Create_Final()
+        public BlankPage2()
         {
             this.InitializeComponent();
         }
@@ -35,22 +34,6 @@ namespace TagAlong
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-        }
-
-        protected async void messageBox(string msg)
-        {
-            var msgDlg = new Windows.UI.Popups.MessageDialog(msg);
-            msgDlg.DefaultCommandIndex = 1;
-            await msgDlg.ShowAsync();
-        }
-
-        private void Button_Click_Current_Loc(object sender, RoutedEventArgs e)
-        {
-            CurrentLocation curloc = new CurrentLocation();
-            curloc.GetGeolocation(sender, e);
-            string latitude = curloc.GetLatitude();
-            string longitude = curloc.GetLongitude();
-            messageBox("latitude: " + latitude + ", longitude: " + longitude);
         }
     }
 }

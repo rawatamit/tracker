@@ -83,7 +83,9 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Location.cs" />
+    <Compile Include="Create_Final.xaml.cs">
+      <DependentUpon>Create_Final.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Create_PickSource.xaml.cs">
       <DependentUpon>Create_PickSource.xaml</DependentUpon>
     </Compile>
@@ -106,6 +108,10 @@
     <Content Include="Assets\WideLogo.scale-240.png" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Create_Final.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Create_PickSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
