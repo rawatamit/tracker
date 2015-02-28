@@ -89,6 +89,7 @@
     <Compile Include="Create_PickSource.xaml.cs">
       <DependentUpon>Create_PickSource.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Location.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
