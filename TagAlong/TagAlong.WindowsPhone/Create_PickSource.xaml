@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button Content="Use current location" HorizontalAlignment="Left" Margin="103,164,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Use current location" HorizontalAlignment="Left" Margin="103,164,0,0" VerticalAlignment="Top" Click="Button_Click_Current_Loc"/>
         <Button Content="Locate using maps" HorizontalAlignment="Left" Margin="103,291,0,0" VerticalAlignment="Top" Width="190"/>
 
     </Grid>

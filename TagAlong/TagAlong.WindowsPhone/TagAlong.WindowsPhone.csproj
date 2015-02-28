@@ -83,6 +83,7 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Location.cs" />
     <Compile Include="Create_PickSource.xaml.cs">
       <DependentUpon>Create_PickSource.xaml</DependentUpon>
     </Compile>
